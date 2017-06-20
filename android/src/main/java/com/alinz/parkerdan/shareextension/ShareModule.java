@@ -76,7 +76,7 @@ public class ShareModule extends ReactContextBaseJavaModule {
                 outStream.write(buf,0,len);
             }
             sharedImagePath = Uri.fromFile(tempFile).toString();
-            tempFile.deleteOnExit()
+            tempFile.deleteOnExit();
           } catch (FileNotFoundException ex) {
             sharedImagePath = "file://ERROR/FILENOTFOUND";
           } catch (IOException ex){
